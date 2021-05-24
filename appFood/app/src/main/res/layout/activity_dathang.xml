@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dathang">
+    <!--logo-->
+    <ImageView
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:id="@+id/imglogo"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/locationlogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imglogo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/imglocation"
+
+        />
+
+    <!--  banner   -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:id="@+id/imgbanner"
+        android:src="@drawable/garan1"
+        app:layout_constraintTop_toBottomOf="@id/imglogo"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Chi tiết đặt hàng"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:background="@drawable/shape"
+
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgbanner"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tvorder1"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size:"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvorder1"
+
+        android:layout_marginLeft="29dp"
+        android:id="@+id/tvsize"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show size"
+            android:textSize="25dp"
+            app:layout_constraintLeft_toRightOf="@+id/tvsize"
+            app:layout_constraintTop_toBottomOf="@+id/tvorder1"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/showsize"
+
+            />
+
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type:"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvsize"
+        android:layout_marginLeft="29dp"
+        android:id="@+id/tvtype"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show type"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvtype"
+        app:layout_constraintTop_toBottomOf="@+id/showsize"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/showtype"
+
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filling:"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtype"
+        android:layout_marginLeft="29dp"
+        android:id="@+id/tvfilling"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show filling"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvfilling"
+        app:layout_constraintTop_toBottomOf="@+id/showtype"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/showfilling"
+
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drink:"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvfilling"
+        android:layout_marginLeft="29dp"
+        android:id="@+id/tvdrink"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show filling"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvdrink"
+        app:layout_constraintTop_toBottomOf="@+id/showfilling"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/showdrink"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Back"
+        app:layout_constraintTop_toBottomOf="@+id/tvdrink"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="29dp"
+        android:id="@+id/btnback"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Send order"
+        app:layout_constraintTop_toBottomOf="@+id/tvdrink"
+        app:layout_constraintLeft_toRightOf="@+id/btnback"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/btnxacnhan"
+
+        />
+
+
+
+    <!--icon bar-->
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/home"
+        android:id="@+id/imghome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="35dp"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/newsfeed"
+        android:id="@+id/imgnewsfeed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imghome"
+        android:layout_marginLeft="30dp"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/calendar"
+        android:id="@+id/imgcalendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imgnewsfeed"
+        android:layout_marginLeft="30dp"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/comment"
+        android:id="@+id/imgcontact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imgcalendar"
+        android:layout_marginLeft="30dp"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/list"
+        android:id="@+id/imgmenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imgcontact"
+        android:layout_marginLeft="30dp"
+        />
+    <!--  icon bar  -->
+</androidx.constraintlayout.widget.ConstraintLayout>

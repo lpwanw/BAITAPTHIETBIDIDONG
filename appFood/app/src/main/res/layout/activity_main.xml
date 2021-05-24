@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!--logo-->
+
+    <RadioGroup
+        android:layout_width="309dp"
+        android:layout_height="227dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/pep"
+                    android:layout_width="108dp"
+                    android:layout_height="50dp"
+                    android:text="Pepsi" />
+
+                <RadioButton
+                    android:id="@+id/sting"
+                    android:layout_width="108dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Sting" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/fanta"
+                    android:layout_width="108dp"
+                    android:layout_height="50dp"
+                    android:text="Fanta Cam" />
+
+                <RadioButton
+                    android:id="@+id/mil"
+                    android:layout_width="108dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Milinda" />
+            </TableRow>
+
+        </TableLayout>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imglocation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/locationlogo"
+        app:layout_constraintLeft_toRightOf="@+id/imglogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  banner   -->
+    <ImageView
+        android:id="@+id/imgbanner"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:src="@drawable/garan1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imglogo" />
+
+    <TextView
+        android:id="@+id/tv1"
+
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:text="Size"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbanner" />
+
+    <TextView
+
+        android:id="@+id/tv2"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/shape"
+        android:text="Type"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbanner" />
+
+
+    <TextView
+        android:id="@+id/tv3"
+
+        android:layout_width="360dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape"
+        android:text="Filling"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <!--FILLING-->
+    <ImageView
+        android:id="@+id/imgcom"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/com"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+
+    <ImageView
+        android:id="@+id/imgpepsi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pepsi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4"
+
+        />
+
+    <ImageView
+        android:id="@+id/imgsting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="130dp"
+        android:src="@drawable/sting"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+
+    <ImageView
+        android:id="@+id/imgmirida"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="130dp"
+        android:src="@drawable/mirinda"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgpepsi" />
+
+    <ImageView
+        android:id="@+id/imgfanta"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/fanta"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgpepsi" />
+
+
+    <ImageView
+        android:id="@+id/imgkhoai"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/khoaitay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgcom"
+
+        />
+
+    <ImageView
+        android:id="@+id/imgsoup"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="130dp"
+        android:src="@drawable/soup"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+
+    <ImageView
+        android:id="@+id/imgmi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="130dp"
+        android:src="@drawable/spagetti"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgsoup" />
+
+    <TextView
+        android:id="@+id/tv4"
+
+        android:layout_width="360dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape"
+        android:text="Drink"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgmi" />
+
+    <Button
+        android:id="@+id/btnorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:text="Order"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgmirida" />
+
+    <TextView
+        android:id="@+id/tvoder11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="xin mời order"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgfanta" />
+    <!--icon bar-->
+
+    <ImageView
+        android:id="@+id/imghome"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="35dp"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgnewsfeed"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/newsfeed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imghome" />
+
+    <ImageView
+        android:id="@+id/imgcalendar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/calendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imgnewsfeed" />
+
+    <ImageView
+        android:id="@+id/imgcontact"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/comment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imgcalendar" />
+
+    <ImageView
+        android:id="@+id/imgmenu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imgcontact" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1">
+
+        <RadioButton
+            android:id="@+id/sizeB"
+            android:layout_width="160dp"
+            android:layout_height="25dp"
+            android:text="Big Size" />
+
+        <RadioButton
+            android:id="@+id/sizeB5"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Small Size" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2">
+
+        <RadioButton
+            android:id="@+id/NotSpicy"
+            android:layout_width="160dp"
+            android:layout_height="25dp"
+            android:text="Not Spicy" />
+
+        <RadioButton
+            android:id="@+id/Spicy"
+            android:layout_width="160dp"
+            android:layout_height="25dp"
+            android:text="Spicy" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="307dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rice"
+                    android:layout_width="108dp"
+                    android:layout_height="50dp"
+                    android:text="Rice" />
+
+                <RadioButton
+                    android:id="@+id/soup"
+                    android:layout_width="108dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Chicken soup" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/chips"
+                    android:layout_width="108dp"
+                    android:layout_height="50dp"
+                    android:text="Potato chips" />
+
+                <RadioButton
+                    android:id="@+id/spaghetti"
+                    android:layout_width="108dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="10dp"
+                    android:text="spaghetti" />
+            </TableRow>
+
+        </TableLayout>
+
+    </RadioGroup>
+
+    <!--  icon bar  -->
+</androidx.constraintlayout.widget.ConstraintLayout>
+

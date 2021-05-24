@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string name="local_service_connected">Local Service Connected!</string>
+    <string name="local_service_disconnected">Local Service Disconnected!</string>
+</resources>
