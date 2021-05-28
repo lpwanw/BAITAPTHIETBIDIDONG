@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     String stringTime = String.valueOf(timeText.getText());
                     int time = 5;
                     try {
-                        time = (int) Float.parseFloat(stringTime);
+                        time = (int) Integer.parseInt(stringTime);
                     }catch (NumberFormatException e){
                         time = 5;
                     }

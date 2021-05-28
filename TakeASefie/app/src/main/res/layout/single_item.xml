@@ -11,11 +11,12 @@
         android:layout_marginTop="20dp" />
 
     <TextView
+        android:id="@+id/txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-thin "
         android:text="File name"
-        android:textSize="20dp"
-        android:id="@+id/txt1"/>
+        android:textSize="20dp" />
 </LinearLayout>
