@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         dropdown2.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                dropdown1.showDropDown();
+                dropdown2.showDropDown();
                 return false;
             }
         });
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if(hasFocus){
-                    dropdown1.showDropDown();
+                    dropdown2.showDropDown();
                 }
             }
         });
